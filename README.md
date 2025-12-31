@@ -1,16 +1,53 @@
-# React + Vite
+# Valorant Market Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这是一个基于 React 和 Supabase 构建的 Valorant 游戏内物品市场追踪应用。用户可以发布、查看和管理游戏内的物品交易信息。
 
-Currently, two official plugins are available:
+## 功能特性
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎮 发布和浏览 Valorant 游戏物品
+- 🔍 按类别筛选物品（全部、皮肤、挂件等）
+- 🗑️ 删除不再需要的物品列表
+- 💾 数据持久化存储在 Supabase 后端
+- 📱 响应式设计，支持移动设备
 
-## React Compiler
+## 技术栈
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **前端**: React + Vite
+- **状态管理**: React Hooks
+- **样式**: Tailwind CSS
+- **后端**: Supabase
+- **图标**: Lucide React
 
-## Expanding the ESLint configuration
+## 项目结构
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── App.jsx          # 主应用组件
+├── main.jsx         # 应用入口点
+└── supabaseClient.js # Supabase 客户端配置
+```
+
+## 快速开始
+
+1. 克隆项目：
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. 安装依赖：
+   ```bash
+   npm install
+   ```
+
+3. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
+
+## 环境配置
+
+需要在项目根目录创建 .env 文件并配置 Supabase URL 和 ANON_KEY。
+
+---
+
+由 AI 自动生成于 2025-12-23
